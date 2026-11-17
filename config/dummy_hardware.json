@@ -1,0 +1,19 @@
+{
+  "config_type": "QbloxHardwareCompilationConfig",
+  "hardware_description": {
+    "cluster0": {
+      "instrument_type": "Cluster",
+      "modules": {"2": {"instrument_type": "QRM_RF"}},
+      "ip": null,
+      "ref": "internal"
+    }
+  },
+  "connectivity": {
+    "graph": [["cluster0.module2.complex_output_0", "q0:mw"]]
+  },
+  "hardware_options": {
+    "modulation_frequencies": {
+      "q0:mw-q0.01": {"lo_freq": 5000000000.0}
+    }
+  }
+}

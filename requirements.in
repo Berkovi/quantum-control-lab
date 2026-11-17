@@ -1,0 +1,5 @@
+# Direct runtime dependencies. Install requirements.txt for the validated environment.
+qblox-scheduler==1.0.1
+qblox-instruments==1.4.1
+matplotlib==3.11.2
+qcodes==0.63.0

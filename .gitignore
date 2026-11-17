@@ -1,0 +1,12 @@
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+artifacts/
+.pytest_cache/
+*.7z
+*.zip
+.env
+.env.*
+*.pem
+*.key
