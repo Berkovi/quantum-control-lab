@@ -109,7 +109,7 @@ policy covers newly registered instruments, not inaccessible vendor resources
 whose constructor fails before registration, and assumes no concurrent instrument
 creation in the same process.
 
-### Publication status
+### Historical publication status before authentication and provenance review
 
 The repository initially had no commits and no remotes, on branch `master`.
 GitHub CLI was not installed, GH_TOKEN/GITHUB_TOKEN were absent, and an
@@ -125,3 +125,29 @@ Local preparation is complete. No public repository was created and no push was
 attempted because authentication and tutorial reuse terms remain unresolved.
 Remote branch verification and GitHub Actions execution therefore have not taken
 place. Stage 2 remains unimplemented.
+
+## Provenance resolution and publication rerun — 2026-11-17
+
+The previous publication status above is historical. GitHub authentication is now
+available for personal account `Berkovi`. The section-level
+[provenance audit](provenance.md) supersedes the earlier blanket tutorial hold:
+ordinary API usage and acknowledged configuration choices were retained, and no
+copied tutorial implementation or explanatory text was identified. The package
+licenses and tutorial acknowledgement remain intact. No functional code changed
+during this review, and Stage 2 remains unimplemented.
+
+The existing clean-install `.venv-validation` environment from the preceding run
+was reused: Windows 11 x64, Python 3.12.10, pip 25.0.1, and the same 130 pinned
+runtime dependencies. This rerun was not another fresh installation.
+
+| Command actually rerun | Result |
+| --- | --- |
+| `.\.venv-validation\Scripts\python.exe -m pip check` | Passed: `No broken requirements found.` |
+| `.\.venv-validation\Scripts\python.exe examples\dummy_cluster.py` | Passed: Q1ASM, sequence JSON, timing CSV, pulse PNG and run metadata exported under ignored `artifacts/stage1`. |
+| `.\.venv-validation\Scripts\python.exe -m unittest discover -s tests -v` | Passed: all 10 tests; unittest reported 1.424 seconds. |
+
+The vendor's dummy-instantiation warning was expected. No physical connection,
+upload, instrument execution, acquisition or qubit simulation took place. The
+same loopback sandbox exception and hardware-validation limitations apply.
+GitHub Actions is a separate remote check; these local results do not claim a
+successful CI run. Its run history will be available on the published repository.

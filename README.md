@@ -9,9 +9,8 @@ This project is not affiliated with or endorsed by Qblox.
 
 Original contributions use the [MIT license](LICENSE). Third-party materials
 retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md).
-**Publication hold:** reuse terms for the adapted documentation tutorial remain
-unresolved. The package licenses are verified, but do not establish the separate
-tutorial's license. See the provenance record before publishing these files.
+The [provenance audit](docs/provenance.md) distinguishes ordinary API/configuration
+usage from copied source or tutorial material and records the review outcome.
 
 A small, runnable project for learning quantum control software architecture.
 Stage 1 follows an experiment from a Python pulse schedule to Qblox Q1ASM using

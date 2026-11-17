@@ -4,34 +4,21 @@ Reviewed on 2026-11-17. The license texts below were read from the installed,
 version-pinned distribution files, not inferred from package metadata. Vendor
 packages and repositories are not distributed in this repository.
 
-## Tutorial provenance and publication hold
+## Provenance review
 
-`examples/dummy_cluster.py` (`build_schedule` and the HardwareAgent usage) and
-`config/dummy_hardware.json` were adapted from Qblox's
-[Scheduler Hello Quantum World tutorial](https://docs.qblox.com/en/main/quickstart/QBS_helloworld/qbloxscheduler_helloworld.html).
-Changes include two pulses, different amplitudes/durations/gap, compile-only
-execution, configuration guards, artifact export, cleanup and regression tests.
-The tutorial page states copyright 2026 Qblox BV.
+The initial broad description of tutorial "adaptations" has been reviewed at
+file/section level. See [the provenance audit](docs/provenance.md) for the exact
+comparison, API/source evidence, retained material and corrected assessment.
+The tutorial informed learning and the choice of API, but no tutorial prose,
+notebook, illustration, or vendor implementation is redistributed here. The
+retained example uses the installed BSD-licensed packages through their APIs.
+The tutorial's separate license has not been inferred from the package licenses.
+No formal clean-room process is claimed.
 
-The [official notebook download](https://docs.qblox.com/en/main/_downloads/6dc328607393e67724ece25d95802d0e/qbloxscheduler_helloworld.zip)
-was inspected on 2026-11-17. Its ZIP contains only
-`qbloxscheduler_helloworld.ipynb`; neither notebook cells nor metadata specify a
-license. The page also does not specify a reuse license. The Python package
-licenses below do **not** establish the license of that separately published
-tutorial. Permission or an authoritative documentation-license statement covering
-these adaptations remains unresolved. Do not publish the affected files until
-this is resolved. No claim is made that the MIT license relicenses these portions.
-
-`docs/architecture.md` is original explanatory prose referencing official docs.
-Its Q1ASM excerpt comes from this project's compiler output, with original
-annotations; it was not copied from a vendor tutorial. Other project docs,
-workflow and tests were authored for this project. No vendor source implementation
-was copied. The API/source references were used to understand behavior.
-
-The original contributions are covered by LICENSE. Third-party materials retain
-their applicable terms. Transitive dependencies are installed by pip, not vendored;
-this notice is not an exhaustive license inventory for redistributing an entire
-Python environment.
+Original project contributions are covered by LICENSE. Third-party materials
+retain their applicable terms. The complete verified package licenses and
+copyright notices below are retained. Transitive dependencies are installed by
+pip, not vendored; this is not an inventory for redistributing a Python environment.
 
 ## qblox-scheduler 1.0.1
 
